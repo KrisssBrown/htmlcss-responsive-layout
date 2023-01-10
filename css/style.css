@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;700;800;900&display=swap');
+
+html{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --blue: #0084FD;
+    --lightblue: #B5DDFF;
+    --purple: #9792E4;
+    --dark: #333333;
+    --yellow: #FDC15F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+menu,
+li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+
+/* NAV SECTION */
+
+.main-header {
+    background-color: var(--blue);
+    padding: 19px 0;
+    color:  white;
+}
+
+.main-header nav.row {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.distance{
+    justify-content: space-between;
+    /* padding: 0 20px; */
+}
+
+.nav-item a {
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.hamburger{
+    display: none;
+}
+
+                /* MEDIAQUERY HEADER */
+
+                @media screen and (max-width: 991px) {
+                    .hamburger {
+                        display: block;
+                    }
+                
+                    .nav-link {
+                        display: none;
+                    }
+                }
+
+/* HERO-GRID SECTION */
+
+.row-gap{
+    gap: 20px;
+    padding: 40px 0 60px 0;
+}
+
+.col-3 {
+    flex-basis: calc(100%/3 - 40px/2);
+}
+
+.col-2 {
+    flex-basis: calc(100%*2/3 - 20px);
+}
+
+.card {
+    background-color: var(--lightblue);
+    padding: 0 20px;
+    border-radius: 20px;
+    border: 2px solid #333333;
+    min-height: 200px;
+}
+
+.card-jumbo{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.card-jumbo .card-text{
+    flex-basis: 50%;
+}
+
+.card-jumbo .phone-img{
+    flex-basis: 50%;
+}
+
+.phone-img{
+    height: 185px;
+    width: 130px;    
+}
+    
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+                /* HERO-GRID MEDIAQUERY */
+
+                @media only screen and (max-width: 575px) {
+                    .hero-grid [class^="col-"] {
+                        flex-basis: calc(100%);
+                    }
+                }
+
+                
+    
+
+
+
+
+
