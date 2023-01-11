@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e36ea4396d.js" crossorigin="anonymous"></script>
+    <title>responsive layout</title>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Responsive Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5d4023dee.js" crossorigin="anonymous"></script>
 </head>
-<body class="debug">
-    <!-- INIZIO HEADER -->
+
+<body>
+
+    <!-- inizio header -->
     <header class="main-header">
+
         <div class="container">
-            <nav class="row distance">
+
+            <nav class="row space-between">
+
                 <a href="#">
                     <img src="./img/logo.png" alt="Logo">
                 </a>
-    
-                <ul class="nav-link row">
+
+                <ul class="header-nav row center">
+
                     <li class="nav-item">
                         <a href="#">Planning</a>
                     </li>
@@ -30,65 +39,256 @@
                     <li class="nav-item">
                         <a href="#">About Us</a>
                     </li>
-                    <li class="nav-item button button-white">
-                        <a href="#">Get Started</a>
+                    <li class="nav-item button button--white">
+                        <a class="small" href="#">Get Started</a>
                     </li>
+
                 </ul>
 
                 <div class="hamburger">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+                
             </nav>
+
         </div>
+
     </header>
-    <!-- FINE HEADER -->
+    <!-- fine header -->
 
-    <!-- INIZIO MAIN -->
+    <!-- inizio main -->
     <main>
-        <section class="hero-grid">
+
+        <section class="hero">
+
             <div class="container">
-                <div class="row row-gap distance">
-                    <div class="col-2">
-                        <div class="card card-jumbo">
-                            <div class="card-text">
-                                <h2 class="">Get a demo application</h2>
 
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos distinctio molestias voluptatum alias. Voluptates autem nostrum non corrupti, velit veniam.</p>
+                <div class="row gutter">
+                    <div class="col2">
 
-                                <a href="#">
-                                    <i class="fa-brands fa-apple"></i>
-                                    App Store
-                                </a>
-                                
+                        <article class="card">
+
+                            <div class="row">
+                                <div class="col col_full">
+                                    <h2>Get a demo application</h2>
+                                </div>
+                                <div class="col col_article">
+                                    <p>
+                                        Lorem ipsum dolor sit amet.
+                                        Perspiciatis temporibus voluptas reiciendis saepe.
+                                        Soluta perspiciatis cumque itaque. Numquam!
+                                    </p>
+
+                                    <div class="button button--blue button--medium">
+                                        <a href="#"><i class="icon_space fa-brands fa-apple"></i>App Store</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="col col_figure">
+                                    <figure>
+                                        <img src="./img/phone.png" alt="phone">
+                                    </figure>
+                                </div>
 
                             </div>
+                        </article>
+                    </div>
+
+                    <div class="col1">
+
+                        <article class="card">
                             
-                            <img class="phone-img" src="./img/phone.png" alt="Phone">
+                            <div class="row center">
+    
+                                <div class="col col_full">
+                                    <i class="icon_big icon_blue fa-solid fa-file-code"></i>
+                                </div>
+                                <div class="col col_full">
+                                    <h2>Clean Code</h2>
+                                </div>
+                                <div class="col col_full">
+                                    <p>Lorem ipsum dolor sit amet.
+                                    Voluptatibus neque modi rem nam.
+                                    Laudantium excepturi debitis odit ex.</p>
+                                </div>
+    
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col1">
+
+                        <article class="card">
+                            
+                            <div class="row center">
+    
+                                <div class="col col_full">
+                                    <i class="icon_big icon_blue fa-solid fa-compass-drafting"></i>
+                                </div>
+                                <div class="col col_full">
+                                    <h2>Web Design</h2>
+                                </div>
+                                <div class="col col_full">
+                                    <p>Lorem ipsum dolor sit amet.
+                                    Voluptatibus neque modi rem nam.
+                                    Laudantium excepturi debitis odit ex.</p>
+                                </div>
+    
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col1">
+
+                        <article class="card">
+                            
+                            <div class="row center">
+    
+                                <div class="col col_full">
+                                    <i class="icon_big icon_blue fa-solid fa-laptop-code"></i>
+                                </div>
+                                <div class="col col_full">
+                                    <h2>Dev</h2>
+                                </div>
+                                <div class="col col_full">
+                                    <p>Lorem ipsum dolor sit amet.
+                                    Voluptatibus neque modi rem nam.
+                                    Laudantium excepturi debitis odit ex.</p>
+                                </div>
+    
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col1">
+
+                        <article class="card">
+                            
+                            <div class="row center">
+    
+                                <div class="col col_full">
+                                    <i class="icon_big icon_blue fa-solid fa-bullhorn"></i>
+                                </div>
+                                <div class="col col_full">
+                                    <h2>Branding</h2>
+                                </div>
+                                <div class="col col_full">
+                                    <p>Lorem ipsum dolor sit amet.
+                                    Voluptatibus neque modi rem nam.
+                                    Laudantium excepturi debitis odit ex.</p>
+                                </div>
+    
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- inizio sezione planning -->
+        <section class="section-planning">
+            <div class="container-small">
+                <div class="row">
+                    <div class="col">
+                        <img class="col__img" src="./img/planning1.png" alt="ok">
+                        <h2 class="col__title">Strategic planning</h2>
+                        <p class="col__text">
+                            Lorem ipsum dolor sit amet.
+                            Odio mollitia suscipit sed. Facilis.
+                            Alias, atque in! In, expedita?
+                            Ut error consequuntur necessitatibus corrupti!
+                            Laborum sit atque perspiciatis dolorum?
+                        </p>
+                    </div>
+                    <div class="col col-card">
+                        <div class="card-planning">
+                            <img src="./img/planning2.png" alt="ko">
+                            <h2>App Development</h2>
+                            <p> <i>Lorem ipsum dolor sit amet.
+                                Esse in quidem veritatis? Debitis.
+                                Amet debitis eos libero quia.</i>
+                            </p>
+                            <a class="button button--circle" href="#">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
                         </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="card"></div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="card"></div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="card"></div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="card"></div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+        <!-- fine secione planning -->
+
+
+        <!-- inizio sezione testimonial -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row testimonial__row">
+
+                    <span>
+                        TESTIMONIALS
+                    </span>
+
+                    <h1 class="testimonial__title">
+                        We are committed expert partners
+                    </h1>
+
+                    <p>
+                        We place huge vatue on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.
+                    </p>
+                </div>
+                <div class="row testimonial__content">
+
+                    <ul class="testimonial__card">
+
+                        <li class="testimonial__item">
+                            <figure>
+                                <img src="./img/testimonial1.jpg" alt="">
+                            </figure>
+
+                            <div class="testimonial__comment">
+                                <p>
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </p>
+    
+                                <span class="testimonial__reference">
+                                    NAT REYNOLDS 
+                                </span>
+
+                            </div>
+                    
+                            
+
+
+                        </li>
+
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+
+
+                </div>
                 
+            </div>
+        </section>
+        <!-- fine sezione testimonial -->
 
 
+    </main>
+    <!-- fine main -->
+
+    <footer></footer>
     
 </body>
+
 </html>
