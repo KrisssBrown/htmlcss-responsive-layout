@@ -109,6 +109,14 @@ a {
     background-color: var(--blue);
 }
 
+.button--purple{
+    color: white;
+    background-color: var(--purple);
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 
 /* HEADER */
 
@@ -328,6 +336,7 @@ a {
 .testimonial-section{
     padding-top:110px ;
     padding-bottom:55px ;
+    margin-bottom: 40px;
 }
 
 .testimonial__row{
@@ -343,7 +352,7 @@ a {
 
 .testimonial__content .testimonial__card{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .testimonial__item {
@@ -352,11 +361,11 @@ a {
     gap: 40px;
 	margin-top: 2.5rem;
 	background-color: var(--purple);
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: 56px;
+	padding: 21px 10px;
 	color: white;
 	font-size: 1.3rem;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
 
 .testimonial__item .testimonial__reference{
@@ -371,6 +380,13 @@ a {
 	/* border-radius: 100px; */
 }
 
+.testimonial__item img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 190px;
+    aspect-ratio: 1;
+}
+
 .testimonial__item .testimonial__comment{
 	flex-basis: calc(75% - 40px);
 }
@@ -379,3 +395,90 @@ a {
 	margin-bottom: 2rem;
 	margin-right: 2em;
 }
+
+                /* MEDIQUERY TESTIMONIAL */
+
+                @media screen and (max-width:576px){
+                    .testimonial__item{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 40px;
+                        text-align: center;
+                        margin-top: 2.5rem;
+                        background-color: var(--purple);
+                        border-radius: 56px;
+                        padding: 21px 10px;
+                        color: white;
+                        font-size: 1.3rem;
+                    }
+
+                    testimonial__item .testimonial__comment p {
+                        margin-bottom: 2rem;
+                        /* margin-right: 2em; */
+                    }
+
+                }    
+
+/* BENEFITS SECTION */
+.benefits-section{
+    background-color: var(--purple);
+}
+
+.benefits__title{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 50px;
+}
+
+.benefits__grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 16px;
+    
+}
+
+
+
+.benefits__grid__item{
+    flex-basis: calc(100%/3 - 20px);
+    background-color: white;
+    border-radius: 50px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+}
+
+.benefits__grid__item h1,h2{
+    color: var(--purple);
+}
+
+.benefits__grid__item h1{
+    font-size: 4rem;
+}
+
+.benefits__grid__item p{
+    font-size: 12px;
+    opacity: 0.6;
+    line-height: 22px;
+}
+
+                /* MEDIAQUERY BENEFITS */
+                @media screen and (max-width: 991px){
+                    .benefits__grid__item{
+                        flex-basis: calc(100% / 2 - 20px);
+                    }
+                }
+
+                @media screen and (max-width: 576px){
+                    .benefits__grid__item{
+                        flex-basis: 100%;
+                    }
+                }
+                
+                
